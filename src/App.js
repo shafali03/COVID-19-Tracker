@@ -42,7 +42,7 @@ function App() {
             onChange={onCountryChange}
             value={country}
           >
-            <MenuItem value='worldwide' > Worldwide</MenuItem>
+            <MenuItem value='worldwide'> Worldwide</MenuItem>
             {countries.map((country) => (
               <MenuItem value={country}>{country.name} </MenuItem>
             ))}
