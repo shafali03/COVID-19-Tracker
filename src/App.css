@@ -6,14 +6,14 @@ body {
   background-color: #f5f6fd;
 }
 
-app__header {
+.app__header {
   display: flex;
   align-items: center;
   margin-bottom: 20px;
   justify-content: space-between;
 }
 
-app__stats {
+.app__stats {
   display: flex;
   justify-content: space-between;
 }
