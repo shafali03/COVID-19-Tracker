@@ -69,9 +69,21 @@ function App() {
         </div>
 
         <div className="app__stats">
-          <InfoBox title='Coronavirus Cases' cases={125} total={100} />
-          <InfoBox title='Recovered' cases={130} total={50} />
-          <InfoBox title='Deaths' cases={135} total={2} />
+          <InfoBox
+            title='Coronavirus Cases'
+            cases={countryInfo.todayCases}
+            total={countryInfo.cases}
+          />
+          <InfoBox
+            title='Recovered'
+            cases={countryInfo.todayRecovered}
+            total={countryInfo.todayRecovered}
+          />
+          <InfoBox
+            title='Deaths'
+            cases={countryInfo.todayDeaths}
+            total={countryInfo.todayDeaths}
+          />
         </div>
 
 
