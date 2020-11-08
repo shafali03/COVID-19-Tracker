@@ -20,7 +20,7 @@ function App() {
       .then(data => {
         setCountryInfo(data)
       })
-  })
+  }, [])
 
 
   useEffect(() => {
