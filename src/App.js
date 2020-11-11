@@ -6,7 +6,7 @@ import Map from './components/Map/Map'
 import Table from './components/Table/Table'
 import { sortData } from './util.js'
 import Graph from './components/Graph/Graph'
-
+import "leaflet/dist/leaflet.css"
 
 function App() {
 
@@ -14,6 +14,9 @@ function App() {
   const [country, setCountry] = useState('worldwide')
   const [countryInfo, setCountryInfo] = useState({})
   const [tableData, setTableData] = useState([])
+  const [mapCenter, setMapCenter] = useState({ lat: 34.80746, lng: -40.4796 })
+  const [mapZoom, setMapZoom] = useState(3)
+
 
 
   useEffect(() => {
@@ -103,7 +106,11 @@ function App() {
         </div>
 
 
-        <Map />
+        <Map
+          center={mapCenter}
+          zoom={mapZoom}
+        />
+
       </div>
 
       <Card className="app__right">
