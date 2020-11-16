@@ -1,9 +1,22 @@
 .infoBox {
   flex: 1;
+  cursor: pointer;
 }
 
 .infoBox:not(:last-child) {
   margin-right: 20px
+}
+
+.infoBox--selected {
+  border-top: 10px solid #7AC74F;
+}
+
+.infoBox--red {
+  border-color: #b30024;
+}
+
+.infoBox__cases--green {
+  color: #7AC74F !important;
 }
 
 .infoBox__cases {
