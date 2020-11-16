@@ -12,6 +12,11 @@ body {
   padding: 20px
 }
 
+.app__header > h1 {
+  color: rgb(241, 11, 11);
+  font-size: 2.2rem;
+}
+
 .app__header {
   display: flex;
   align-items: center;
