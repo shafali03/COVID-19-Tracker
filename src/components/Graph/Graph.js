@@ -62,7 +62,7 @@ const buildChartData = (data, casesType) => {
   return chartData
 }
 
-function Graph({ casesType = 'cases' }) {
+function Graph({ casesType }) {
   const [data, setData] = useState({})
 
   useEffect(() => {
@@ -72,9 +72,8 @@ function Graph({ casesType = 'cases' }) {
           return response.json()
         })
         .then((data) => {
-          let chartData = buildChartData(data, "cases")
+          let chartData = buildChartData(data, casesType)
           setData(chartData)
-          console.log(chartData)
         })
     }
 
